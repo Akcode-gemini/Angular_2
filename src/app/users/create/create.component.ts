@@ -65,6 +65,7 @@ export class CreateComponent implements OnInit {
       this.createForm.value.proPic = '';
       return;
     } else {
+      this.t='';
       const reader = new FileReader();
       reader.onloadend = () => {
         this.base64String = reader.result;
